@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package arachne;
 
-/**
- *
- * @author hannah angela
- */
 public class Quest {
-    
+   private String title; 
+   private int reqSilk; 
 }
