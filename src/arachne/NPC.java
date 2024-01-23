@@ -1,7 +1,7 @@
 
 package arachne;
 
-public class NPC {
+public abstract class NPC {
     private String name;
     private String dialogue; 
     private String rewardType; 
