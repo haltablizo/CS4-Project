@@ -1,13 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package arachne;
 
-/**
- *
- * @author GRAVITON
- */
-public class Spider extends NPC{
+
+public class Spider {
+    private int atk; 
+    private int def; 
+    private int hp;
+    private int maxHp; 
+    private int amtOfSilk; 
     
+    public Spider(int a, int d, int h, int m, int amt) {
+        this.atk = a; 
+        this.def = d; 
+        this.hp = h; 
+        this.maxHp = m; 
+        this.amtOfSilk = amt; 
+    }
+    
+    public int getAtk() {
+        return this.atk; 
+    }     
+    public int getDef() {
+        return this.atk; 
+    }     
+    public int getHp() {
+        return this.atk; 
+    }    
+    public int getMaxHp() {
+        return this.atk; 
+    }
+    public int getAmtOfSilk() {
+        return this.amtOfSilk; 
+    }
 }
