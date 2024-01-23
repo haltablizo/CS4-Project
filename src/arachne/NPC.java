@@ -7,9 +7,9 @@ public class NPC {
     private String rewardType; 
     
     public NPC(String name, String dialogue, String rewardType) {
-        name = this.name; 
-        dialogue = this.dialogue; 
-        rewardType = this.rewardType; 
+        this.name = name; 
+        this.dialogue = dialogue; 
+        this.rewardType = rewardType; 
     }
     
     public String getName() {

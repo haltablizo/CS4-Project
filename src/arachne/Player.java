@@ -10,8 +10,8 @@ public class Player {
     private int maxHp = 20; 
     
     public Player(String name, int hp) {
-        name = this.name; 
-        hp = maxHp; 
+        this.name = name; 
+        this.hp = hp; 
     }   
     
     public String getName() {
