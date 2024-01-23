@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package arachne;
 
-/**
- *
- * @author GRAVITON
- */
-public class Human extends NPC{
+public class Human extends NPC {
     
+    public Human(String name, String dialogue) {
+        super(name, dialogue, "powerup"); 
+    }
 }

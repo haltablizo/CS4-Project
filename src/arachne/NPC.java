@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package arachne;
 
-/**
- *
- * @author GRAVITON
- */
 public class NPC {
+    private String name;
+    private String dialogue; 
+    private String rewardType; 
     
+    public NPC(String name, String dialogue, String rewardType) {
+        name = this.name; 
+        dialogue = this.dialogue; 
+        rewardType = this.rewardType; 
+    }
 }
