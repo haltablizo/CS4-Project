@@ -11,4 +11,14 @@ public class NPC {
         dialogue = this.dialogue; 
         rewardType = this.rewardType; 
     }
+    
+    public String getName() {
+        return this.name; 
+    }     
+    public String getDialogue() {
+        return this.name; 
+    }    
+    public String getRewardType() {
+        return this.name; 
+    }
 }
