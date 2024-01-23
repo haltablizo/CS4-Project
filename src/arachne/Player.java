@@ -13,4 +13,25 @@ public class Player {
         name = this.name; 
         hp = maxHp; 
     }   
+    
+    public String getName() {
+        return this.name; 
+    }
+    
+    public float getPopMeter() {
+        return this.popMeter; 
+    }
+    
+    public int getAtk() {
+        return this.atk; 
+    }
+    public int getDef() {
+        return this.def; 
+    }    
+    public int getHp() {
+        return this.hp; 
+    }    
+    public int getMaxHp() {
+        return this.maxHp; 
+    }
 }
