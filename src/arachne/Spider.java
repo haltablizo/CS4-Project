@@ -26,13 +26,13 @@ public class Spider {
         return this.atk; 
     }     
     public int getDef() {
-        return this.atk; 
+        return this.def; 
     }     
     public int getHp() {
-        return this.atk; 
+        return this.hp; 
     }    
     public int getMaxHp() {
-        return this.atk; 
+        return this.maxHp; 
     }
     public int getAmtOfSilk() {
         return this.amtOfSilk; 
