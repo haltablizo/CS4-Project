@@ -5,6 +5,7 @@ public abstract class NPC {
     private String name;
     private String dialogue; 
     private Storeable rewardType; 
+    private Equipment owned; 
     
     public NPC(String name, String dialogue, Storeable reward) {
         this.name = name; 

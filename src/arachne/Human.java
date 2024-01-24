@@ -4,6 +4,7 @@ package arachne;
 public class Human extends NPC {
     private Powerup reward; 
     private int amtOfReward; 
+    private Powerup owned; 
     
     public Human(String name, String dialogue, Powerup p, int amt) {
         super(name, dialogue, p); 
