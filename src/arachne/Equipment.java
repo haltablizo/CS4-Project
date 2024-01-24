@@ -1,10 +1,10 @@
 
 package arachne;
 
-public class Weapon implements Storeable {
+public class Equipment implements Storeable {
     private String name; 
     
-    public Weapon(String name) {
+    public Equipment(String name) {
         this.name = name; 
     }
     

@@ -1,7 +1,7 @@
 
 package arachne;
 
-public class Coat extends Weapon {
+public class Coat extends Equipment {
     private int defBonus;  
     
     public Coat(String name, int defBonus) {

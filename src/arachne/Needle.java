@@ -1,7 +1,7 @@
 
 package arachne;
 
-public class Needle extends Weapon {
+public class Needle extends Equipment {
     private int atkBonus; 
     
     public Needle(String name, int atkBonus) {

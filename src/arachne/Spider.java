@@ -42,6 +42,22 @@ public class Spider {
         this.hp-=i;
     }
    
-    
+    public void attack(Player p) {
+        if (this.getAtk() > p.getDef()) {
+            if (p.getCurDef()) {
+                p.reduceHP(this.getAtk()-p.getDef());
+                p.removeDef();
+            } 
+            else {
+                p.reduceHP(this.getAtk());
+
+            }
+            System.out.println(p.getName() + " was attacked! Their current HP: " + p.getHp()); 
+            
+        }
+        else {
+            System.out.println(this.getName() + " did not do any damage!"); 
+        }
+    }
     
 }
