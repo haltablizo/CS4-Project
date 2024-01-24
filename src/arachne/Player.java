@@ -111,7 +111,7 @@ public class Player {
         if (p.getPopInc()>0) System.out.println("popularity was increased by " + p.getPopInc()); 
 
     }
-    
+        
     public void interact(Human h) {
         System.out.println(h.getDialogue()); 
     }
