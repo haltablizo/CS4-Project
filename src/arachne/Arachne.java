@@ -30,7 +30,8 @@ public class Arachne {
         System.out.println("\nSecond scenario"); 
 
         Powerup peristalsis = new Powerup("Peristalsis", 0, 0, 5, 0, 0);
-        Human francesca = new Human("Francesca", "Please get me 3 pieces of silk.", peristalsis, 1); 
+        Human francesca = new Human("Francesca", "Please get me 3 pieces of silk.", 
+                peristalsis, 1); 
         Quest francescaQuest = new Quest("From Francesca to Paolo", 3, 15);
         
         arachne.interact(francesca);

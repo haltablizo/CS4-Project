@@ -78,7 +78,8 @@ public class Player {
             
             if (s.getHp() > 0) System.out.println("Their current HP: " + s.getHp()); 
             else {
-                System.out.println(s.getName() + " was knocked down! They dropped " + s.getAmtOfSilk() + " amount of silk");
+                System.out.println(s.getName() + " was knocked down! They dropped " 
+                        + s.getAmtOfSilk() + " amount of silk");
                 this.pStorage.pickUpSilk(s.getAmtOfSilk()); 
             }
             
