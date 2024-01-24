@@ -124,4 +124,15 @@ public class Player {
         curQuest.complete(); 
         this.popMeter += curQuest.getReward(); 
     }
+    
+    public void trade(Divine d) {
+        System.out.println(d.getDialogue()); 
+        this.pStorage.discard(d.getRequirement(), 1);
+        d.dStorage.discard(d.getReward(), 1); 
+        this.pStorage.store(d.getReward(), 1);
+        d.dStorage.store(d.getRequirement(), 1);
+        System.out.println("Successfully traded with " + d.getName()); 
+
+
+    }
 }

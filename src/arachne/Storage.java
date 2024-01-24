@@ -19,14 +19,12 @@ public class Storage {
         silk += amt; 
     }
     
-    public void store(Powerup item, int amt) {
+    public void store(Storeable item, int amt) {
         inventory.put(item, amt); 
-        System.out.println("Stored " + item.getName() + " in inventory"); 
     }
     
     public void discard(Storeable item, int amt) {
         inventory.put(item, (inventory.get(item)-amt)); 
-        System.out.println("Discarded " + item + " in inventory"); 
     }
     public void use(Powerup n, int amt) {
         inventory.put(n, inventory.get(n)-amt); 
