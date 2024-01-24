@@ -4,21 +4,21 @@ package arachne;
 public abstract class NPC {
     private String name;
     private String dialogue; 
-    private String rewardType; 
+    private Storeable rewardType; 
     
-    public NPC(String name, String dialogue, String rewardType) {
+    public NPC(String name, String dialogue, Storeable reward) {
         this.name = name; 
         this.dialogue = dialogue; 
-        this.rewardType = rewardType; 
+        this.rewardType = reward; 
     }
     
     public String getName() {
         return this.name; 
     }     
     public String getDialogue() {
-        return this.name; 
+        return this.dialogue; 
     }    
-    public String getRewardType() {
-        return this.name; 
+    public Storeable getRewardType() {
+        return this.rewardType; 
     }
 }

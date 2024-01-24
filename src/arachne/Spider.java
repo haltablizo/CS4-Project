@@ -50,10 +50,8 @@ public class Spider {
             } 
             else {
                 p.reduceHP(this.getAtk());
-
             }
             System.out.println(p.getName() + " was attacked! Their current HP: " + p.getHp()); 
-            
         }
         else {
             System.out.println(this.getName() + " did not do any damage!"); 

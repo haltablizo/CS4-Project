@@ -12,8 +12,9 @@ public class Arachne {
         Player arachne = new Player("Arachne", handMeDown, stick, playerStorage); 
         Spider jadeneus = new Spider("Jadeneus", 2, 1, 5, 5, 3); 
         Powerup springWater = new Powerup("Spring water", 3, 0, 0, 0, 0); 
-        playerStorage.store(springWater, 1); 
+        playerStorage.store(springWater, 1);
         
+        System.out.println("\nFirst scenario"); 
         arachne.attack(jadeneus); 
         jadeneus.attack(arachne); 
         arachne.defend(); 
@@ -24,6 +25,14 @@ public class Arachne {
         jadeneus.attack(arachne); 
         arachne.attack(jadeneus); 
         
+        Powerup peristalsis = new Powerup("Peristalsis", 0, 0, 5, 0, 0);
+        Human francesca = new Human("Francesca", "Please get me 3 pieces of silk.", peristalsis, 1); 
+        Quest francescaQuest = new Quest("From Francesca to Paolo", 3, 15);
+        
+        System.out.println("\nSecond scenario"); 
+        arachne.interact(francesca);
+        francesca.give(arachne, francescaQuest); 
+        arachne.pursueQuest(); 
+        francesca.reward(arachne); 
     }
-    
 }

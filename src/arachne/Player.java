@@ -11,7 +11,9 @@ public class Player {
     private Coat coat; 
     private Needle needle; 
     private boolean curDef = false; //checks if player is "defending" for this round 
-    private Storage pStorage; 
+    public Storage pStorage; 
+    
+    private Quest curQuest; 
     
     public Player(String name, Coat c, Needle n, Storage s) {
         this.name = name; 
@@ -51,10 +53,6 @@ public class Player {
     
     public boolean getCurDef() {
         return this.curDef; 
-    }
-    
-    public void pickup(Storeable s) {
-        
     }
     
     public void setCoat(Coat c) {
@@ -112,5 +110,18 @@ public class Player {
         if (p.getMaxHpInc()>0) System.out.println("max hp was increased by " + p.getMaxHpInc()); 
         if (p.getPopInc()>0) System.out.println("popularity was increased by " + p.getPopInc()); 
 
+    }
+    
+    public void interact(Human h) {
+        System.out.println(h.getDialogue()); 
+    }
+    
+    public void setQuest(Quest q) {
+        curQuest = q; 
+    }
+    
+    public void pursueQuest() {
+        curQuest.complete(); 
+        this.popMeter += curQuest.getReward(); 
     }
 }
