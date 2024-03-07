@@ -1,6 +1,10 @@
 
 package arachne;
 
+import arachne.Screens.InventoryScreen;
+import arachne.Screens.DivineBattleScreen;
+import arachne.Screens.MainMenuScreen;
+
 import java.util.*; 
 
 public class Arachne {
@@ -50,5 +54,20 @@ public class Arachne {
                 goldenStick, peristalsis, erosStorage); 
         arachne.trade(eros); 
         
+        
+        //showing inventory screen
+        InventoryScreen frame = new InventoryScreen();
+        frame.setVisible(true);
+        
+        //showing divine battle screen (uncomment pls)
+        /*
+        DivineBattleScreen frame = new DivineBattleScreen(); 
+        frame.setVisible(true); 
+        */
+
+        /*
+        MainMenuScreen frame = new MainMenuScreen();
+        frame.setVisible(true);
+        */
     }
 }
